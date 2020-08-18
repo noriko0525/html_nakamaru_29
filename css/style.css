@@ -1,0 +1,265 @@
+/* ここから下に記載していく */
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* header */
+#header{
+    display: flex;
+    justify-content: space-between; /*左右寄せ*/
+    align-items: center; /*縦位置中央*/
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu li{
+    font-size: 21px;
+    margin: 50px 50px 50px 0px;
+}
+
+/* mainvisual */
+.mainvisual{
+    display: flex;
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+}
+.mainvisual{
+    background:url("../img/mainbg.png") no-repeat center center;
+    background-size: 100% auto; /*横幅100% */
+    width: 1200px;
+    height: 420px;
+}
+.mainvisual p:nth-child(n + 2) {
+    margin-top: 30px;;
+}
+.mainvisual p.mainvisual_txt_01{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.mainvisual p.mainvisual_txt_02{
+    color: #FFF;
+    font-size: 24px;
+}
+/* ABOUT */
+.slide{
+    width: 1200px;
+    height: 255px;;
+    margin: 80px 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.slide ul{
+    display: flex;
+    /* position: absolute;
+    top:0;
+    left: 0; */
+}
+.ex p:nth-child(n + 2){
+    padding: 40px 0 0;
+}
+/* COURSE */
+.block_ex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0 0 0;
+}
+.block_ex div{
+    width: 600px;   
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.block_ex div img{
+    width: 100%;
+    height: 100%;
+}
+.block_ex div h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.block_ex div p{
+    padding: 40px 50px 0;
+    width: 450px;
+    text-align: left;
+}
+/* NEWS */
+.news_list ul{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.news_list li{
+    width: 300px;
+    text-align: left;
+}
+.news_list li p.news_day{
+    padding: 30px 0 24px 0;
+}
+
+/* Access */
+.access{
+    background-color: #f2f2f2;
+}
+.map{
+    padding: 60px 0;
+}
+.company{
+    padding: 0 0 60px 0;
+}
+.company table{
+    margin: 0 auto;
+    padding: 30px;
+}
+.company tr{
+    height: 50px;
+}
+.company th,td{
+    text-align: left;
+}
+.company th{
+    width: 150px;
+}
+
+/* CONTACT */
+.contact .contact_txt01{
+    padding: 60px 0 30px;
+}
+.contact .contact_txt02{
+    padding: 0 0 70px 0;
+}
+.contact table{
+    margin: 0 auto;
+    border-top: 2px solid #bfbfbf;
+}
+.contact th{
+    width:168px ;
+    padding: 8px 64px 8px 16px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #bfbfbf;
+}
+.contact td{
+    width:384px;
+    padding: 8px 0px 8px 8px;
+    text-align: left;
+    border-bottom: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+}
+.textbox{
+    width: 328px;
+    height: 36px;
+    border: 1px solid #bfbfbf;
+    box-sizing:border-box;
+}
+select{
+    width: 328px;
+    height: 36px;
+    border: 1px solid #bfbfbf;
+    box-sizing:border-box;
+    font-size: 16px;
+}
+.textarea{
+    width: 328px;
+    height: 100px;
+    border: 1px solid #bfbfbf;
+    box-sizing:border-box;
+    font-size: 16px;
+}
+.cheese-form label {
+    display: block;
+    font-size: 14px;
+    position: relative;
+    padding: 5px 0 0 40px;
+  }
+.cheese-form label input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #bfbfbf;
+    position: absolute;
+    top:-3px;
+    left: -3px;
+}
+.cheese-form label{
+    padding-bottom:24px;
+ }
+/* footer */
+.footer{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #707070;
+    text-align: center;
+    color: #fff;
+
+}
+/* common */
+.content p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.block h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 60px 0 30px;
+}
+.block span{
+    font-size: 18px;
+    padding: 0 0 60px 0;
+    display: block;
+}
+.font_color_ylw{
+    color: #ffd61a;
+    font-weight: bold;
+}
+div img{
+    vertical-align: top;
+}
+.btn{
+    padding: 60px 0;
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+}
+.btn a{
+    display: block;
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #ffd61a;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+.btn a:hover{
+    opacity: 0.5;
+}
+.btn2{
+    padding: 60px 0 140px;
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+}
+.btn2 a{
+    display: block;
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #ffd61a;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+.btn2 a:hover{
+    opacity: 0.5;
+}
